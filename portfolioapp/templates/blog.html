@@ -1,5 +1,19 @@
 {% extends "base.html" %} {% block page_content %}
 
+
+<style>
+
+.container {
+        
+        padding-left: 300px;
+        background: white;
+        display: inline-block;
+        margin: 150px auto;
+
+      }
+</style>
+
+<div class="container">
 <div class="col-md-8 offset-md-2">
     <h1>My blogs</h1>
     <hr> {% for blog in blogs %}
@@ -8,6 +22,9 @@
         {{ blog.published_on.date }}
     </small>
     <hr> {% endfor %}
+
+    <a href="/portfolioapp" style="background-color: #0f1c1b; font-size:12px;">Go to home page</a>
+</div>
 </div>
 
 {% endblock %}
