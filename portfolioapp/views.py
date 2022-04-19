@@ -51,7 +51,7 @@ def contact(request):
     else:
         form = NameForm()
 
-    return render(request, 'portfolioapp/')
+    return render(request, 'contact.html')
 
 
 def projects(request):
