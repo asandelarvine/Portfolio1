@@ -48,8 +48,6 @@ class Experience(models.Model):
     is_present = models.BooleanField(null=True,blank=True)
     responsibilities_1 = models.CharField(max_length=2000,default=None,blank=True)
     responsibilities_2 = models.CharField(max_length=2000,default=None,blank=True)
-    # responsibilities_3 = models.CharField(max_length=2000,default=None,blank=True)
-    # responsibilities_4 = models.CharField(max_length=2000,default=None,blank=True)
     company = models.CharField(max_length=200,default=None,blank=True)
     location = models.CharField(max_length=200,default=None,blank=True)
 
